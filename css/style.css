@@ -25,6 +25,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Proxima Nova Extra Bold';
+  src: url("../fonts/ProximaNova-Extrabld.eot");
+  src: url("../fonts/ProximaNova-Extrabld.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Extrabld.woff") format("woff"), url("../fonts/ProximaNova-Extrabld.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'Proxima Nova Light', sans-serif;
   font-size: 14px;
@@ -129,5 +137,33 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.hero__inner {
+  padding-top: 120px;
+  padding-bottom: 170px;
+}
+
+.hero__title {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.hero__text {
+  font-size: 30px;
+  font-family: 'Proxima Nova Extra Bold';
+  color: #121212;
+  line-height: 120%;
+  margin-top: 30px;
+}
+
+.button {
+  background-color: #507fe1;
+  border: none;
+  padding: 25px 45px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
