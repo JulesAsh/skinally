@@ -3,9 +3,27 @@
         display: flex
         align-items: center
         min-height: 80px
-    &__menu
-        margin-right: 30px
-    &__
+        justify-content: space-between
+    &__phone
+        display: block
+        font-size: 19px
+        margin-bottom: 5px
+        +bold
+        color: $text-color
+        text-transform: uppercase
+        text-align: right
+        text-decoration: none
+    &__smalltext
+        display: block
+        color: $text-color-light
+        text-align: right
+    &__email
+        text-decoration: underline
+    &__button
+        
+        
+        
+
 .menu
     &-button
         display: flex
@@ -31,9 +49,10 @@
         +bold
         font-size: 18px
         text-transform: uppercase
-        // +bold
-        // font-size: 18px
-        // color: rgb(38, 38, 38)
-        // text-transform: uppercase
-        // line-height: 120%
+        color: $text-color
+        margin-bottom: 5px
+    &__description
+        font-size: 14px
+        color: #6b6b6b
+        display: block
 
