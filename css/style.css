@@ -19,10 +19,41 @@
   min-height: 80px;
 }
 
+.navbar__menu {
+  margin-right: 30px;
+}
+
 .menu-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: transparent;
+  border: none;
   border-right: 1px solid #ede6f8;
   border-left: 1px solid #ede6f8;
+  height: 80px;
+  width: 70px;
+}
+
+.menu-button__line {
+  background-color: #507fe1;
+  height: 3px;
+  width: 20px;
+  margin-bottom: 5px;
+}
+
+.menu-button__line:last-child {
+  margin-bottom: 0;
 }
 
 @font-face {
