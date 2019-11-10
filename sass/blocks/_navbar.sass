@@ -1,4 +1,9 @@
 .navbar
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background-color: #ffffff
     &__inner
         display: flex
         align-items: center
@@ -20,11 +25,31 @@
     &__email
         text-decoration: underline
     &__button
-        
-        
-        
-
+       
+ 
 .menu
+    position: fixed
+    top: 80px
+    width: 100%
+    background-color: $lightBlue
+    transition: 0.2s
+    transform: translateY(-100%) 
+    &-wrap
+        width: 1170px
+        margin: 0 auto
+    &_active
+        transform: translateY(100%)
+    &__nav
+        padding: 12px 42px 
+        padding-right: 15px
+        display: flex
+        justify-content: space-between
+    &__link
+        font-size: 17px
+        line-height: 25px
+        color: #ffffff
+        text-transform: uppercase
+        text-decoration: none
     &-button
         display: flex
         flex-direction: column
