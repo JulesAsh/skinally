@@ -7,7 +7,6 @@
     &__inner
         display: flex
         align-items: center
-        min-height: 80px
         justify-content: space-between
     &__phone
         display: block
@@ -25,7 +24,6 @@
     &__email
         text-decoration: underline
     &__button
-       
  
 .menu
     position: fixed
@@ -33,17 +31,19 @@
     width: 100%
     background-color: $lightBlue
     transition: 0.2s
-    transform: translateY(-100%) 
+    transform: translateY(0)
     &-wrap
         width: 1170px
         margin: 0 auto
     &_active
-        transform: translateY(100%)
+        transform: translateY(0)
     &__nav
         padding: 12px 42px 
         padding-right: 15px
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
+        align-items: center
     &__link
         font-size: 17px
         line-height: 25px
@@ -80,4 +80,30 @@
         font-size: 14px
         color: #6b6b6b
         display: block
-
+@media (max-width: 1199px)
+    .menu
+        &-wrap
+            max-width: 960px
+        &__nav
+            flex-direction: column
+        &__link
+            margin-bottom: 20px
+@media (max-width: 991px)
+    .navbar
+        &__mobile, &__landline
+            display: none
+    .menu
+        &-wrap
+            max-width: 890px
+@media (max-width: 576px)
+    .logo
+        display: none
+    .menu
+        top: 60px
+        transform: translateY(0) 
+        
+        &-wrap
+            max-width: 100%
+        &-button
+            height: 60px
+       
