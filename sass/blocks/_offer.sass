@@ -2,7 +2,12 @@
     background-color: $bg-primary
     &-block
         background-color: $bg-secondary
+        background-image: url('../img/form-bg.jpg')
+        background-repeat: no-repeat
+        background-position: top right
+        background-size: contain
         padding: 82px 80px
+        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1)
     &__title
         font-size: 25px
         +bold
@@ -16,5 +21,36 @@
 .form
     &__row
         display: flex
-        justify-content: space-between
+        // justify-content: space-between
         align-items: center
+    &__label
+        font-size: 17px
+        display: block
+    &__input
+        width: 300px
+        height: 80px
+        border: 1px solid #dddddd
+        border-right: none
+        margin-top: 17px
+        padding: 30px
+    &__input:last-child
+        border-right: 1px solid #dddddd
+    &__checkbox
+        width: 30px
+        height: 30px
+    &__button
+        width: 291px
+        height: 80px
+        
+
+.checkbox
+    &__row
+        margin-top: 25px
+        
+    &__group
+        margin-right: 42px
+        display: flex
+        align-items: center
+    &__label
+        display: inline-block
+        margin-left: 19px

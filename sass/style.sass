@@ -2,7 +2,6 @@
 @import 'fonts'
 @import 'colors'
 
-
 body 
     +light
     font-size: 14px
@@ -18,7 +17,9 @@ body
 @media (max-width: 350px)
     .button-o
         font-size: 10px
-
+@import 'blocks/navbar'
+@import 'blocks/hero'
+@import 'blocks/offer'
 .button
     background-color: $lightBlue
     border: none
@@ -27,10 +28,5 @@ body
     color: #ffffff
     font-size: 15px
     text-transform: uppercase
-@import 'blocks/navbar'
-@import 'blocks/hero'
-@import 'blocks/offer'
 
-@media (max-width: 350px)
-    .button-o
-        font-size: 10px
+

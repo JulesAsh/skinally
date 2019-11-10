@@ -59,22 +59,24 @@ html(lang="ru")
                                 .form__group
                                     label(for="").form__label Высота, см                                                  
                                     input(type="text").input.form__input
-                            .form__row
-                                .form__group
-                                    input(type="checkbox").input.form__input
-                                    label(for="").form__label Монтаж
-                                .form__group
-                                    input(type="checkbox").input.form__input
-                                    label(for="").form__label Доставка
+                            .form__row.checkbox__row
+                                .form__group.checkbox__group
+                                    input(type="checkbox").input.form__checkbox
+                                    label(for="").form__label.checkbox__label Монтаж
+                                .form__group.checkbox__group
+                                    input(type="checkbox").input.form__checkbox
+                                    label(for="").form__label.checkbox__label Доставка
                             .form__row
                                 .form__group
                                     input(type="text" placeholder="Ваше имя").input.form__input
                                     input(type="tel" placeholder="Ваш телефон").input.form__input
-                                    input(type="submit" value="получить скидку").button
+                                    input(type="submit" value="получить скидку").button.form__button
                                 
                                     
                                                                             
-                                    
+                                 
+
+
                                 
 
 
