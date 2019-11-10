@@ -31,12 +31,14 @@
     width: 100%
     background-color: $lightBlue
     transition: 0.2s
-    transform: translateY(0)
+    transform: translateY(-200%)
+    opacity: 0
     &-wrap
         width: 1170px
         margin: 0 auto
     &_active
         transform: translateY(0)
+        opacity: 1
     &__nav
         padding: 12px 42px 
         padding-right: 15px
@@ -99,9 +101,7 @@
     .logo
         display: none
     .menu
-        top: 60px
         transform: translateY(0) 
-        
         &-wrap
             max-width: 100%
         &-button
