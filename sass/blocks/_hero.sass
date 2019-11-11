@@ -1,0 +1,32 @@
+.hero
+    background-color: $bg-primary
+    background-image: url('../img/hero-bg.jpg') 
+    background-repeat: no-repeat 
+    background-position: center top
+    background-size: contain
+    &__inner
+        padding-top: 120px
+        padding-bottom: 270px
+        margin-top: 80px
+    &__title
+        font-size: 30px
+        line-height: 35px
+    &__text
+        font-size: 30px
+        +exBold
+        color: rgb(18, 18, 18)
+        line-height: 120%
+        margin-top: 30px
+    &__button 
+        margin-top: 70px
+
+@media (max-width: 991px)
+    .hero
+        background-size: cover
+        background-position: top left -450px
+@media (max-width: 576px)       
+    .hero
+        &__inner
+            margin-top: 60px
+        
+
