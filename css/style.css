@@ -28,7 +28,10 @@
   }
 }
 
-h1, h1, p, ul {
+h1,
+h2,
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -256,7 +259,7 @@ body {
 }
 
 .hero {
-  background-color: #f2f1f1;
+  background-color: #f1f1f1;
   background-image: url("../img/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -299,6 +302,93 @@ body {
   }
 }
 
+.offer {
+  background-color: #f1f1f1;
+}
+
+.offer-block {
+  background-color: #ffffff;
+  background-image: url("../img/form-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  padding: 82px 80px;
+  -webkit-box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+.offer__title {
+  font-size: 25px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  text-transform: uppercase;
+}
+
+.offer__text {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.offer__form {
+  margin-top: 40px;
+}
+
+.form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 900px;
+}
+
+.form-group {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+}
+
+.form__label {
+  font-size: 17px;
+  display: block;
+}
+
+.form__input {
+  border-right-width: 0px;
+  margin-top: 17px;
+  width: 100%;
+  height: 80px;
+  border-right-width: 1px;
+}
+
+.form__checkbox {
+  width: 30px;
+  height: 30px;
+}
+
+.form__button {
+  width: 291px;
+  height: 80px;
+}
+
+.checkbox__row {
+  margin-top: 25px;
+}
+
+.checkbox__group {
+  margin-right: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkbox__label {
+  display: inline-block;
+  margin-left: 19px;
+}
+
 .button {
   background-color: #507fe1;
   border: none;
@@ -307,5 +397,10 @@ body {
   color: #ffffff;
   font-size: 15px;
   text-transform: uppercase;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 30px;
 }
 /*# sourceMappingURL=style.css.map */
