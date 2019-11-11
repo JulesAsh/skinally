@@ -9,16 +9,16 @@ html(lang="ru")
         link(rel="stylesheet", href="css/style.css")
     body
         header.header
-            .menu
-                    .menu-wrap
-                        nav.menu__nav.menu_active
-                            a.menu__link(href="#") Главная 
-                            a.menu__link(href="#") продукция
-                            a.menu__link(href="#") каталог
-                            a.menu__link(href="#") примеры работ
-                            a.menu__link(href="#") примерка изображений
-                            a.menu__link(href="#") стоимость дилерам
-                            a.menu__link(href="#") о скинали
+            //- .menu
+            //-     .menu-wrap
+            //-         nav.menu__nav.menu_active
+            //-             a.menu__link(href="#") Главная 
+            //-             a.menu__link(href="#") продукция
+            //-             a.menu__link(href="#") каталог
+            //-             a.menu__link(href="#") примеры работ
+            //-             a.menu__link(href="#") примерка изображений
+            //-             a.menu__link(href="#") стоимость дилерам
+            //-             a.menu__link(href="#") о скинали
             .navbar
                 .container
                     .navbar__inner
@@ -42,5 +42,44 @@ html(lang="ru")
                         h1.hero__title Гарантия <br> минимальной цены<br> на скинали
                         p.hero__text от 3 000 р/м2
                         button.button.hero__button Заказать скинали
+        main
+            section.offer
+                .container
+                    .offer__inner.offer-block
+                        h2.offer__title оставьте заявку на расчет
+                        p.offer__text и получите скидку 30% на изготовление скинали или фартука для кухни
+                        form.form.offer__form
+                            .form__row
+                                .form__group
+                                    label(for="").form__label Вид стекла
+                                    input(type="text").input.form__input
+                                .form__group
+                                    label(for="").form__label Ширина, см                                                 
+                                    input(type="text").input.form__input
+                                .form__group
+                                    label(for="").form__label Высота, см                                                  
+                                    input(type="text").input.form__input
+                            .form__row.checkbox__row
+                                .form__group.checkbox__group
+                                    input(type="checkbox").input.form__checkbox
+                                    label(for="").form__label.checkbox__label Монтаж
+                                .form__group.checkbox__group
+                                    input(type="checkbox").input.form__checkbox
+                                    label(for="").form__label.checkbox__label Доставка
+                            .form__row
+                                .form__group
+                                    input(type="text" placeholder="Ваше имя").input.form__input
+                                    input(type="tel" placeholder="Ваш телефон").input.form__input
+                                    input(type="submit" value="получить скидку").button.form__button
+                                
+                                    
+                                                                            
+                                 
 
+
+                                
+
+
+
+        script(type="text/javascript" src="https://spikmi.com/Widget?Id=2030")
 
