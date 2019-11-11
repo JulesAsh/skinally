@@ -58,18 +58,18 @@ html(lang="ru")
                                     input(type="text").input.form__input
                                 .form__group
                                     label(for="").form__label Высота, см                                                  
-                                    input(type="text").input.form__input
+                                    input(type="text").input.form__input.form-border
                             .form__row.checkbox__row
                                 .form__group.checkbox__group
-                                    input(type="checkbox").input.form__checkbox
-                                    label(for="").form__label.checkbox__label Монтаж
+                                    input(type="checkbox" id="setup").input.form__checkbox
+                                    label(for="setup").form__label.checkbox__label Монтаж
                                 .form__group.checkbox__group
-                                    input(type="checkbox").input.form__checkbox
-                                    label(for="").form__label.checkbox__label Доставка
+                                    input(type="checkbox" id="delivery").input.form__checkbox
+                                    label(for="delivery").form__label.checkbox__label Доставка
                             .form__row
-                                .form__group
-                                    input(type="text" placeholder="Ваше имя").input.form__input
-                                    input(type="tel" placeholder="Ваш телефон").input.form__input
+                                .form__group.form__group-btn
+                                    input(type="text" placeholder="Ваше имя").input.form__input.form-border
+                                    input(type="tel" placeholder="Ваш телефон").input.form__input.form-border
                                     input(type="submit" value="получить скидку").button.form__button
                                 
                                     

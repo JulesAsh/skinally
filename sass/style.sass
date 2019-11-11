@@ -6,6 +6,7 @@ body
     +light
     font-size: 14px
     line-height: 120%
+    background-color: $bg-primary
 .button-o
     border: 2px solid $lightBlue
     text-transform: uppercase
@@ -28,9 +29,14 @@ body
     color: #ffffff
     font-size: 15px
     text-transform: uppercase
-.input
+@media (max-width: 992px)
+    .button
+        padding: 25px
+input
     border: 1px solid #dddddd
     border-right-width: 0px
     padding: 30px
+.form-border
+    border-right-width: 1px
 
 
