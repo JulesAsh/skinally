@@ -1,0 +1,45 @@
+.features
+    background-color: $bg-secondary
+    &__inner
+        padding: 100px 0
+    &__title
+        font-sie: 30px
+        +bold
+        line-height: 35px
+        text-transform: uppercase
+        text-align: center
+        margin: 0 auto
+    &__list
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 33%
+        text-align: center
+        margin-top: 105px
+        &-text
+            font-size: 20px
+            line-height: 24px
+            margin-top: 30px
+
+@media (max-width: 768px) 
+    .features
+        &__item
+            width: 50%
+            margin-top: 80px
+
+@media (max-width: 576px) 
+    .features
+        &__inner
+            padding: 80px 0
+        &__item
+            width: 100%
+            
+    
+
+
