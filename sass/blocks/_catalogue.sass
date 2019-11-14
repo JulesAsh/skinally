@@ -1,0 +1,81 @@
+.catalogue
+    &-block
+        padding: 100px 0
+    &__list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin: 100px 0 30px
+    &__item
+        max-width: 570px
+        max-height: 130px
+        position: relative
+        box-shadow: 6.553px 4.589px 21px 0px rgba(0, 0, 0, 0.1)
+        margin-bottom: 30px
+    &__genre
+        display: inline-block
+        position: absolute
+        color: #ffffff
+        background-color: rgba(80, 127, 225, 0.6)
+        padding: 6px 10px
+        +bold
+        font-size: 12px
+        text-transform: uppercase
+        top: 10px
+        left: 10px
+    &__buttons
+        position: absolute
+        bottom: 0
+        right: 0
+    &-btn
+        border: none
+        font-size: 11px
+        text-transform: uppercase
+        height: 30px
+        padding: 9px
+        cursor: pointer
+    &__try-on
+        background-color: #ffffff
+        color: #6a99e9
+    &__order
+        background-color: #6a99e9
+        color: #ffffff
+    &__save
+        background-color: #417cde
+        border: none
+        width: 30px
+        height: 30px
+    &__link
+        text-align: center
+        
+    &-link
+        display: inline-block
+        color: #ffffff
+        background-color: $lightBlue
+        max-width: 350px
+        padding: 29px 32px
+        text-transform: uppercase
+        font-size: 16px
+        +bold
+        margin-bottom: 25px
+    &__text
+        font-size: 16px
+        text-align: center
+        
+
+@media (max-width: 1199px)
+    .catalogue
+        &__list
+            justify-content: center
+@media (max-width: 992px)
+    .catalogue
+        &__list
+            margin-top: 70px
+        &_item
+            max-width: 470px
+
+             
+
+
+  
+

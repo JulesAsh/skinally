@@ -15,13 +15,30 @@ body
     color: $lightBlue
     font-size: 12px
     +bold
-@media (max-width: 350px)
-    .button-o
-        font-size: 10px
+.section
+    &__title
+        font-size: 30px
+        +bold
+        line-height: 35px
+        text-transform: uppercase
+        text-align: center
+        margin: 0 auto
+@import "blocks/blog"
+@import "blocks/catalogue"
+@import "blocks/products"
+@import "blocks/saleform"
+@import "blocks/slider"
+@import "blocks/stages"
 @import 'blocks/navbar'
 @import 'blocks/hero'
 @import 'blocks/offer'
 @import 'blocks/features'
+
+
+
+@media (max-width: 350px)
+    .button-o
+        font-size: 10px
 
 .button
     background-color: $lightBlue
@@ -40,5 +57,3 @@ input
     padding: 30px
 .form-border
     border-right-width: 1px
-
-

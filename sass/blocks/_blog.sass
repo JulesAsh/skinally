@@ -1,0 +1,61 @@
+.blog
+    background-color: #ffffff
+    &-block
+        padding-top: 135px
+        padding-bottom: 90px
+    &__text
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__title
+        font-size: 24px
+        +bold
+        line-height: 120%
+    &__link
+        color: $lightBlue
+        font-size: 16px
+        text-decoration: underline
+    &__list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-top: 70px
+    &__item
+        max-width: 284px
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08)
+        margin-bottom: 30px
+        &-title
+            font-size: 18px
+            height: 80px
+            text-align: center
+            padding: 30px 5px 0
+
+@media (max-width: 991px)
+    .blog
+        &-block
+            padding-bottom: 50px
+        &__text
+            justify-content: space-around
+        &__list
+            justify-content: center
+        &__item
+            margin-right: 30px
+@media (max-width: 768px)
+    .blog
+        &-block
+            padding-top: 100px
+            padding-bottom: 50px
+        &__text
+            flex-direction: column
+        &__title
+            margin-bottom: 30px
+            text-align: center
+        &__list
+            justify-content: center
+            margin-top: 50px
+        // &__item
+        //     margin-right: 0
+            
+            
+
+
