@@ -68,8 +68,10 @@ html(lang="ru")
                                     label(for="delivery").form__label.checkbox__label Доставка
                             .form__row
                                 .form__group.form__group-btn
-                                    input(type="text" placeholder="Ваше имя").input.form__input.form-border
-                                    input(type="tel" placeholder="Ваш телефон").input.form__input.form-border
+                                    input(type="text" placeholder="Ваше имя").input.form__input
+                                .form__group
+                                    input(type="tel" placeholder="Ваш телефон").input.form__input
+                                .form__group
                                     input(type="submit" value="получить скидку").button.form__button
             section.features
                 .container
@@ -283,11 +285,11 @@ html(lang="ru")
                                 img(src="img/stage-6.png", alt="").stages__img
                                 h4.stages__title Монтаж
                                 p.stages__text Вы оставляете заявку на нашем сайте или по телефону
-            section.slider
-                .container
-                    .sleder__inner.slider-block
-                        h2.section__title до и после
-                        //- slider
+            //- section.slider
+            //-     .container
+            //-         .sleder__inner.slider-block
+            //-             h2.section__title до и после
+            //-             //- slider
             section.reviews
                 .container
                     .reviews__inner.reviews-block
@@ -296,31 +298,45 @@ html(lang="ru")
                             li.revies__item
                                 p.reviews__text  Девушка подобрала лучший вариант для меня, без первого взноса и с минимальной переплатой.<br> У Банка очень много способов погашения,и удобное мобильное приложение.
                                 img(src="img/review-1.jpg", alt="").reviews__img
-                                span.reviews-name Екатерина Иванова
-                                span.reviews-location Москва
+                                span.reviews-name Екатерина Иванова <br>Москва
                             li.revies__item
                                 p.reviews__text  Очень часто мы сталкиваемся с недопониманием со стороны сотрудников банка, и иной раз идти не хочется...В очередной раз "навешают лапши на уши" и культурно пошлют.
                                 img(src="img/review-2.jpg", alt="").reviews__img
-                                span.reviews-name Екатерина Иванова
-                                span.reviews-location Москва
+                                span.reviews-name Екатерина Иванова <br>Москва
                             li.revies__item
                                 p.reviews__text Хочу рассказать об опыте знакомства с Почта банком. Мне срочно были нужны деньги, а времени на сбор документов для кредита не было. Подруга посоветовала обратиться в офис Почта банка на ул. Тухачевского.
                                 img(src="img/review-3.jpg", alt="").reviews__img
-                                span.reviews-name Екатерина Иванова
-                                span.reviews-location Москва
-            section.sale-form
+                                span.reviews-name Екатерина Иванова <br>Москва
+            section.sale
                 .container
-                    .sale-form__inner.sale-form-block
-                        p.sale-from__title
-                        p.sale-form__descr
-                        form(action="")
-                            .form__row
-                                input(type="text" placeholder="Ваше имя").input.sale-form__input
-                                input(type="text" placeholder="Ваш телефон").input.sale-form__input
-                                input(type="text" placeholder="Ваша цена").input.sale-form__input
-                            input(type="submit", value="Получить расчет со скидкой") 
-                            span.sale-form__text Ваши данные надежно защищены. 
-                            span.sale-form__text Отправление заявки ни к чему не обязывает.
+                    .sale__inner.sale-block
+                                h2.sale__title ищите где дешевле и лучше?
+                                p.sale__text Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите ее и мы вам пересчитаем заказ с максимальной скидкой
+                                form.sale__form    
+                                    .sale__form__row
+                                        .sale__form__group
+                                            input(type="text" placeholder="Ваше имя").input.form__input
+                                            input(type="tel" placeholder="Ваше телефон").input.form__input
+                                            input(type="text" placeholder="Ваша цена").input.form__input.form-border
+                                    .sale__form__row
+                                        .sale__form__group
+                                            input(type="submit" value="Получить расчет со скидкой").button.sale__form__button
+                                            span.sale__form__text Ваши данные надежно защищены. 
+                                            span.sale__form__text Отправление заявки ни к чему не обязывает.
+            
+            //- section.sale-form
+            //-     .container
+            //-         .sale-form__inner.sale-form-block
+            //-             p.sale-from__title
+            //-             p.sale-form__descr
+            //-             form(action="")
+            //-                 .form__row
+            //-                     input(type="text" placeholder="Ваше имя").input.sale-form__input
+            //-                     input(type="text" placeholder="Ваш телефон").input.sale-form__input
+            //-                     input(type="text" placeholder="Ваша цена").input.sale-form__input
+            //-                 input(type="submit", value="Получить расчет со скидкой") 
+            //-                 span.sale-form__text Ваши данные надежно защищены. 
+            //-                 span.sale-form__text Отправление заявки ни к чему не обязывает.
 
                                                                             
                                  

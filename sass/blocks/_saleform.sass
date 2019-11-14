@@ -1,7 +1,76 @@
-.sale-form
+.sale
     &-block
-        padding-top: 60px
-    &__inner
-        background-color: #ffffff
+        background-color: $bg-secondary
+        background-image: url('../img/form-bg-2.jpg')
+        background-repeat: no-repeat
+        background-position: top right
+        background-size: contain
+        padding: 82px 80px
+        box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1)
+        margin-top: -100px
+        margin-bottom: 130px
+    &__title
+        font-size: 25px
+        +bold
+        text-transform: uppercase
+    &__text
+        font-size: 21px
+        line-height: 25px
+        margin-top: 30px
+    &__form
+        margin-top: 40px
+@media (max-width: 1199px)
+    .sale
+        &-block
+            background-position: center right -220px
+@media (max-width: 992px)
+    .sale
+        &-block
+            background-image: none
+        &__text
+            line-height: 25px
+            margin-top: 20px
+        &__title
+            line-height: 29px
+// оригинальные значение      
+.sale__form
+    &__row
+        display: flex
+        align-items: center
+        justify-content: center
+        max-width: 900px
+    &__group
+        width: 100%
+        // flex-basis: 33.33%
+        display: flex
+        // flex-wrap: wrap
+    &__input
+        margin-top: 22px
+        width: 100%
+        height: 80px
+    &__button
+        width: 300px
+        height: 80px
+        margin-top: 22px
+@media (max-width: 992px)
+    .sale__form
+        &__button
+            width: 100% 
+@media (max-width: 768px)
+    .input 
+        border-right-width: 1px
+    .sale__form
+        &__row
+            flex-direction: column
+        &__group
+            flex-basis: 100%
+            width: 100%
+        &__input
+            margin: 15px 0        
+            
+@media (max-width: 576px)  
+    .sale
+        &-block
+            padding: 62px 70px
+            margin-bottom: 90px
         
-    
