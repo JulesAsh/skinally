@@ -1102,6 +1102,8 @@ input[type="checkbox"]:checked + label::before {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 95px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .production__text {
@@ -1113,6 +1115,16 @@ input[type="checkbox"]:checked + label::before {
 
 .production-text {
   margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .production__content {
+    margin-top: 70px;
+  }
+  .production__text {
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }
 
 .contacts-block {
@@ -1134,6 +1146,25 @@ input[type="checkbox"]:checked + label::before {
 
 .contacts__text {
   margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .contacts__list {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contacts__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+  .contacts__item {
+    margin-top: 30px;
+  }
 }
 
 .questions-block {
