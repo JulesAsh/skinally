@@ -307,39 +307,87 @@ html(lang="ru")
                                 p.reviews__text Хочу рассказать об опыте знакомства с Почта банком. Мне срочно были нужны деньги, а времени на сбор документов для кредита не было. Подруга посоветовала обратиться в офис Почта банка на ул. Тухачевского.
                                 img(src="img/review-3.jpg", alt="").reviews__img
                                 span.reviews-name Екатерина Иванова <br>Москва
-            section.sale
+            section.offer
                 .container
-                    .sale__inner.sale-block
-                                h2.sale__title ищите где дешевле и лучше?
-                                p.sale__text Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите ее и мы вам пересчитаем заказ с максимальной скидкой
-                                form.sale__form    
-                                    .sale__form__row
-                                        .sale__form__group
-                                            input(type="text" placeholder="Ваше имя").input.sale-form__input
-                                            input(type="tel" placeholder="Ваше телефон").input.sale-form__input
-                                            input(type="text" placeholder="Ваша цена").input.sale-form__input.form-border
-                                    .sale__form__row
-                                        .sale__form__group
-                                            input(type="submit" value="Получить расчет со скидкой").button.sale__form__button
-                                            .sale__form__text
-                                                span.sale__form-text Ваши данные надежно защищены. 
-                                                span.sale__form-text Отправление заявки ни к чему не обязывает.
-            
-            //- section.sale-form
-            //-     .container
-            //-         .sale-form__inner.sale-form-block
-            //-             p.sale-from__title
-            //-             p.sale-form__descr
-            //-             form(action="")
-            //-                 .form__row
-            //-                     input(type="text" placeholder="Ваше имя").input.sale-form__input
-            //-                     input(type="text" placeholder="Ваш телефон").input.sale-form__input
-            //-                     input(type="text" placeholder="Ваша цена").input.sale-form__input
-            //-                 input(type="submit", value="Получить расчет со скидкой") 
-            //-                 span.sale-form__text Ваши данные надежно защищены. 
-            //-                 span.sale-form__text Отправление заявки ни к чему не обязывает.
+                    .offer__inner.offer-block.offer__block
+                        h2.offer__title ищите где дешевле и лучше?
+                        p.offer__text.offer-text Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите ее - и мы вам пересчитаем заказ с максимальной скидкой
+                        form.form.offer__form
+                            .form__row
+                                .form__group
+                                    input(type="text" placeholder="Ваше имя").input.form__input
+                                .form__group
+                                    input(type="tel" placeholder="Ваш телефон").input.form__input
+                                .form__group
+                                    input(type="text" placeholder="Ваша цена").input.form__input.form-border
+                            .form__row.form__row-text
+                                .form__group
+                                    input(type="submit" value="получить скидку").button.form__button
+                                .form__group-text
+                                    span.form-text Ваши данные надежно защищены. 
+                                    span.form-text Отправление заявки ни к чему не обязывает.
+            section.production
+                .container
+                    .production-block
+                        h2.section__title о производстве
+                        .production__content
+                            .production__img
+                                img(src="img/production.jpg", alt="").production-img
+                            .production__text
+                                p.production-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                p.production-text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+            section.contacts
+                .container
+                    .contacts__inner.contacts-block
+                        h2.section__title Контакты
+                        ul.contacts__list
+                            li.contacts__item
+                                img(src="img/phone-icon.png", alt="")
+                                p.contacts__text +7 499 123-45-67
+                            li.contacts__item
+                                img(src="img/map-icon.png", alt="")
+                                p.contacts__text Каширинское шоссе, д. 23, офис 345
+                            li.contacts__item
+                                img(src="img/mail-icon.png", alt="")
+                                p.contacts__text 5404177@mail.ru
+                    //-  карта            
+            section.questions
+                .container
+                    .questions-block
+                        .questions__content
+                            p.questions__text Остались вопросы?
+                            a(href="#").questions__link Задайте их менеджеру
+        footer.footer
+            .container
+                .footer-block
+                    .footer__left
+                        .footer__logo 
+                            strong.footer__logo-text Фабрика скинали №1
+                            span.footer__logo-description ведущий производитель скинали
+                        .footer__copy 
+                            p.footer__copy-text &copy; Фабрика скинали №1
+                    .footer__middle
+                        ul.footer__list
+                            li.footer__item 
+                                img(src="img/webmoney.png", alt="")
+                            li.footer__item 
+                                img(src="img/yandex.png", alt="")
+                            li.footer__item 
+                                img(src="img/master-card.png", alt="")
+                            li.footer__item 
+                                img(src="img/visa.png", alt="")
+                    .footer__right
+                        p.footer__phone +7 499 123-45-67
+                        p.footer__mail 5404177@mail.ru
+                        ul.footer__social-list
+                            li.footer__social-item
+                                img(src="img/twitter-icon.png", alt="").footer__social-img
+                            li.footer__social-item
+                                img(src="img/facebook-icon.png", alt="").footer__social-img
+                            li.footer__social-item
+                                img(src="img/vk-icon.png", alt="").footer__social-img
 
-                                                                            
+                             
                                  
 
 
