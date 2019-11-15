@@ -10,5 +10,8 @@ $(window).load(function() {
         prevArrow: $('.arrow-left'),
         nextArrow: $('.arrow-right')
     });
+    $('.menu-button').on('click', function(){
+        $('.menu').toggleClass('menu__active');
+    });
 
 });

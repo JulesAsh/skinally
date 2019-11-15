@@ -10,16 +10,16 @@ html(lang="ru")
         link(rel="stylesheet", href="css/style.css")
     body
         header.header
-            //- .menu
-            //-     .menu-wrap
-            //-         nav.menu__nav.menu_active
-            //-             a.menu__link(href="#") Главная 
-            //-             a.menu__link(href="#") продукция
-            //-             a.menu__link(href="#") каталог
-            //-             a.menu__link(href="#") примеры работ
-            //-             a.menu__link(href="#") примерка изображений
-            //-             a.menu__link(href="#") стоимость дилерам
-            //-             a.menu__link(href="#") о скинали
+            .menu
+                .menu-wrap
+                    nav.menu__nav
+                        a.menu__link(href="#") главная 
+                        a.menu__link(href="#") продукция
+                        a.menu__link(href="#") каталог
+                        a.menu__link(href="#") примеры работ
+                        a.menu__link(href="#") примерка изображений
+                        a.menu__link(href="#") стоимость дилерам
+                        a.menu__link(href="#") о скинали
             .navbar
                 .container
                     .navbar__inner
@@ -52,8 +52,10 @@ html(lang="ru")
                         form.form.offer__form
                             .form__row
                                 .form__group
-                                    label(for="").form__label Вид стекла
-                                    input(type="text").input.form__input
+                                    label(for="glass").form__label Вид стекла
+                                    select#glass(name="").input.form__input
+                                        option(value="С печатью") С печатью
+                                        option(value="Без печати") Без печати
                                 .form__group
                                     label(for="").form__label Ширина, см                                                 
                                     input(type="text").input.form__input
@@ -315,15 +317,15 @@ html(lang="ru")
                     .reviews__inner.reviews-block
                         h2.section__title Отзывы наших клиентов
                         ul.reviews__list
-                            li.revies__item
+                            li.reviews__item
                                 p.reviews__text  Девушка подобрала лучший вариант для меня, без первого взноса и с минимальной переплатой.<br> У Банка очень много способов погашения,и удобное мобильное приложение.
                                 img(src="img/review-1.jpg", alt="").reviews__img
                                 span.reviews-name Екатерина Иванова <br>Москва
-                            li.revies__item
+                            li.reviews__item
                                 p.reviews__text  Очень часто мы сталкиваемся с недопониманием со стороны сотрудников банка, и иной раз идти не хочется...В очередной раз "навешают лапши на уши" и культурно пошлют.
                                 img(src="img/review-2.jpg", alt="").reviews__img
                                 span.reviews-name Екатерина Иванова <br>Москва
-                            li.revies__item
+                            li.reviews__item
                                 p.reviews__text Хочу рассказать об опыте знакомства с Почта банком. Мне срочно были нужны деньги, а времени на сбор документов для кредита не было. Подруга посоветовала обратиться в офис Почта банка на ул. Тухачевского.
                                 img(src="img/review-3.jpg", alt="").reviews__img
                                 span.reviews-name Екатерина Иванова <br>Москва

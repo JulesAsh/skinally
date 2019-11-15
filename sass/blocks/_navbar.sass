@@ -1,7 +1,9 @@
 .navbar
     position: fixed
+    z-index: 99
     top: 0
     left: 0
+    right: 0
     width: 100%
     background-color: $bg-primary
     &__inner
@@ -27,23 +29,26 @@
  
 .menu
     position: fixed
+    left: 0
     top: 80px
     width: 100%
     background-color: $lightBlue
-    transition: 0.2s
+    transition: 0.3s
     transform: translateY(-200%)
     opacity: 0
     &-wrap
-        width: 1170px
+        width: 100%
+        max-width: 1190px
         margin: 0 auto
-    &_active
+    &__active
         transform: translateY(0)
         opacity: 1
+        z-index: 99
     &__nav
         padding: 12px 42px 
         padding-right: 15px
         display: flex
-        justify-content: space-between
+        justify-content: space-around
         flex-wrap: wrap
         align-items: center
     &__link
@@ -63,6 +68,9 @@
         border-left: 1px solid #ede6f8
         height: 80px
         width: 70px
+        outline: none
+        &:hover
+            cursor: pointer
         &__line
             background-color: $lightBlue
             height: 3px
