@@ -6,6 +6,7 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Скиналли
         link(rel="stylesheet", href="css/normalize.css")
+        link(rel="stylesheet", href="css/twentytwenty.css")
         link(rel="stylesheet", href="css/style.css")
     body
         header.header
@@ -43,7 +44,7 @@ html(lang="ru")
                         p.hero__text от 3 000 р/м2
                         button.button.hero__button Заказать скинали
         main
-            section.offer
+            section.offer.bg-secondary
                 .container
                     .offer__inner.offer-block
                         h2.offer__title оставьте заявку на расчет
@@ -68,8 +69,10 @@ html(lang="ru")
                                     label(for="delivery").form__label.checkbox__label Доставка
                             .form__row
                                 .form__group.form__group-btn
-                                    input(type="text" placeholder="Ваше имя").input.form__input.form-border
-                                    input(type="tel" placeholder="Ваш телефон").input.form__input.form-border
+                                    input(type="text" placeholder="Ваше имя").input.form__input
+                                .form__group
+                                    input(type="tel" placeholder="Ваш телефон").input.form__input
+                                .form__group
                                     input(type="submit" value="получить скидку").button.form__button
             section.features
                 .container
@@ -283,11 +286,30 @@ html(lang="ru")
                                 img(src="img/stage-6.png", alt="").stages__img
                                 h4.stages__title Монтаж
                                 p.stages__text Вы оставляете заявку на нашем сайте или по телефону
-            section.slider
+            section.before
                 .container
-                    .sleder__inner.slider-block
+                    .before-block
                         h2.section__title до и после
-                        //- slider
+                        .before__slider-wrapper
+                            .before__slider
+                                .before__slider-item
+                                    .before-after
+                                        img(src="img/before-1.jpg", alt="")
+                                        img(src="img/before-2.jpg", alt="")
+                                .before__slider-item
+                                    .before-after
+                                        img(src="img/before-1.jpg", alt="")
+                                        img(src="img/before-2.jpg", alt="")
+                                .before__slider-item
+                                    .before-after
+                                        img(src="img/before-1.jpg", alt="")
+                                        img(src="img/before-2.jpg", alt="")
+                            .before__slider-arrows
+                                button.arrow.arrow-left
+                                    img(src="img/prev-icon.png", alt="")
+                                button.arrow.arrow-right
+                                    img(src="img/next-icon.png", alt="")
+                        
             section.reviews
                 .container
                     .reviews__inner.reviews-block
@@ -296,39 +318,104 @@ html(lang="ru")
                             li.revies__item
                                 p.reviews__text  Девушка подобрала лучший вариант для меня, без первого взноса и с минимальной переплатой.<br> У Банка очень много способов погашения,и удобное мобильное приложение.
                                 img(src="img/review-1.jpg", alt="").reviews__img
-                                span.reviews-name Екатерина Иванова
-                                span.reviews-location Москва
+                                span.reviews-name Екатерина Иванова <br>Москва
                             li.revies__item
                                 p.reviews__text  Очень часто мы сталкиваемся с недопониманием со стороны сотрудников банка, и иной раз идти не хочется...В очередной раз "навешают лапши на уши" и культурно пошлют.
                                 img(src="img/review-2.jpg", alt="").reviews__img
-                                span.reviews-name Екатерина Иванова
-                                span.reviews-location Москва
+                                span.reviews-name Екатерина Иванова <br>Москва
                             li.revies__item
                                 p.reviews__text Хочу рассказать об опыте знакомства с Почта банком. Мне срочно были нужны деньги, а времени на сбор документов для кредита не было. Подруга посоветовала обратиться в офис Почта банка на ул. Тухачевского.
                                 img(src="img/review-3.jpg", alt="").reviews__img
-                                span.reviews-name Екатерина Иванова
-                                span.reviews-location Москва
-            section.sale-form
+                                span.reviews-name Екатерина Иванова <br>Москва
+            section.offer.bg-secondary
                 .container
-                    .sale-form__inner.sale-form-block
-                        p.sale-from__title
-                        p.sale-form__descr
-                        form(action="")
+                    .offer-block.offer__block
+                        h2.offer__title ищите где дешевле и лучше?
+                        p.offer__text.offer-text Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите ее - и мы вам пересчитаем заказ с максимальной скидкой
+                        form.form.offer__form
                             .form__row
-                                input(type="text" placeholder="Ваше имя").input.sale-form__input
-                                input(type="text" placeholder="Ваш телефон").input.sale-form__input
-                                input(type="text" placeholder="Ваша цена").input.sale-form__input
-                            input(type="submit", value="Получить расчет со скидкой") 
-                            span.sale-form__text Ваши данные надежно защищены. 
-                            span.sale-form__text Отправление заявки ни к чему не обязывает.
-
-                                                                            
-                                 
-
-
-                                
-
-
+                                .form__group
+                                    input(type="text" placeholder="Ваше имя").input.form__input
+                                .form__group
+                                    input(type="tel" placeholder="Ваш телефон").input.form__input
+                                .form__group
+                                    input(type="text" placeholder="Ваша цена").input.form__input.form-border
+                            .form__row.form__row-text
+                                .form__group
+                                    input(type="submit" value="получить скидку").button.form__button
+                                .form__group-text
+                                    span.form-text Ваши данные надежно защищены. 
+                                    span.form-text Отправление заявки ни к чему не обязывает.
+            section.production
+                .container
+                    .production-block
+                        h2.section__title о производстве
+                        .production__content
+                            .production__img
+                                img(src="img/production.jpg", alt="").production-img
+                            .production__text
+                                p.production-text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                p.production-text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+            section.contacts
+                .container
+                    .contacts__inner.contacts-block
+                        h2.section__title Контакты
+                        ul.contacts__list
+                            li.contacts__item
+                                img(src="img/phone-icon.png", alt="")
+                                p.contacts__text +7 499 123-45-67
+                            li.contacts__item
+                                img(src="img/map-icon.png", alt="")
+                                p.contacts__text Каширинское шоссе, д. 23, офис 345
+                            li.contacts__item
+                                img(src="img/mail-icon.png", alt="")
+                                p.contacts__text 5404177@mail.ru
+            //- конструктор карт яндекс 
+            .map#map
+                script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6a3800b4d9f1cd0405a0fb143e2aeeddc662b2fff91310b04536011baf4344bc&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false")
+            section.questions
+                .container
+                    .questions-block.questions__content
+                        p.questions__text Остались вопросы?
+                        a(href="#").questions__link Задайте их менеджеру
+        footer.footer
+            .container
+                .footer-block
+                    .footer__left
+                        .footer__logo 
+                            strong.footer__logo-text Фабрика скинали №1
+                            span.footer__logo-description ведущий производитель скинали
+                        .footer__copy 
+                            p.footer__copy-text &copy; Фабрика скинали №1
+                    .footer__middle
+                        ul.footer__list
+                            li.footer__item 
+                                img(src="img/webmoney.png", alt="")
+                            li.footer__item 
+                                img(src="img/yandex.png", alt="")
+                            li.footer__item 
+                                img(src="img/master-card.png", alt="")
+                            li.footer__item 
+                                img(src="img/visa.png", alt="")
+                    .footer__right
+                        p.footer__phone +7 499 123-45-67
+                        p.footer__mail 5404177@mail.ru
+                        ul.footer__social-list
+                            li.footer__social-item
+                                a(href="")
+                                    img(src="img/twitter-icon.png", alt="").footer__social-img
+                            li.footer__social-item
+                                a(href="")
+                                    img(src="img/facebook-icon.png", alt="").footer__social-img
+                            li.footer__social-item
+                                a(href="")
+                                    img(src="img/vk-icon.png", alt="").footer__social-img
 
         //- script(type="text/javascript" src="https://spikmi.com/Widget?Id=2030")
-
+        script(src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous")
+        script(src="js/slick.min.js")
+        script(src="js/jquery.event.move.js")
+        script(src="js/jquery.twentytwenty.js")
+        script(src="js/before-slider.js")
+            
+        

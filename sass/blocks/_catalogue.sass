@@ -1,4 +1,5 @@
 .catalogue
+    background-color: $bg-secondary
     &-block
         padding: 100px 0
     &__list
@@ -12,6 +13,11 @@
         position: relative
         box-shadow: 6.553px 4.589px 21px 0px rgba(0, 0, 0, 0.1)
         margin-bottom: 30px
+        overflow-y: hidden
+        &:hover
+            .catalogue__buttons
+                transform: translateY(0)
+                opacity: 1
     &__genre
         display: inline-block
         position: absolute
@@ -27,6 +33,9 @@
         position: absolute
         bottom: 0
         right: 0
+        transform: translateY(100%)
+        transition: 0.04s
+        opacity: 0
     &-btn
         border: none
         font-size: 11px

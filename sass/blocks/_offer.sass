@@ -1,6 +1,6 @@
 .offer
     &-block
-        background-color: $bg-secondary
+        background-color: $bg-primary
         background-image: url('../img/form-bg.jpg')
         background-repeat: no-repeat
         background-position: top right
@@ -9,6 +9,9 @@
         box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1)
         margin-top: -100px
         margin-bottom: 130px
+    &__block
+        background-image: url('../img/form-bg-2.png')
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
     &__title
         font-size: 25px
         +bold
@@ -16,6 +19,9 @@
     &__text
         font-size: 21px
         margin-top: 30px
+    &-text
+        max-width: 830px
+        line-height: 24px
     &__form
         margin-top: 40px
 @media (max-width: 1199px)
@@ -31,17 +37,24 @@
             margin-top: 20px
         &__title
             line-height: 29px
-// оригинальные значение      
+// оригинальные значение
+// .bg-secondary
+//     background-color: #f1f1f1
 .form
     &__row
         display: flex
         align-items: center
-        // justify-content: center
+        justify-content: center
         max-width: 900px
+        &-text
+            justify-content: flex-start
     &__group
         flex-basis: 33.33%
         display: flex
         flex-wrap: wrap
+        &-text
+            margin-left: 45px
+            margin-top: 20px
     &__label
         font-size: 17px
         display: block
@@ -50,35 +63,11 @@
         width: 100%
         height: 80px
     &__button
-        width: 291px
+        width: 300px
         height: 80px
         margin-top: 22px
-@media (max-width: 992px)
-    .form
-        &__group-btn
-            flex-basis: 100%
-            width: 100%
-        &__button
-            width: 100% 
-@media (max-width: 768px)
-    .input 
-        border-right-width: 1px
-    .form
-        &__row
-            flex-direction: column
-        &__group
-            flex-basis: 100%
-            width: 100%
-        &__input
-            margin: 15px 0
-    .checkbox
-        &__row
-            flex-direction: row
-            margin: 20px 0
-            
-            
-
-
+    &-text
+        display: block
 .checkbox
     &__row
         margin-top: 25px
@@ -103,7 +92,30 @@ input[type="checkbox"]
     display: none
     &:checked + label::before
         background-color: $lightBlue
-
+@media (max-width: 992px)
+    .form
+        &__group-btn
+            flex-basis: 100%
+            width: 100%
+        &__button
+            width: 100% 
+@media (max-width: 768px)
+    .input 
+        border-right-width: 1px
+    .form
+        &__row
+            flex-direction: column
+        &__group
+            flex-basis: 100%
+            width: 100%
+            &-text
+                text-align: center
+        &__input
+            margin: 15px 0
+    .checkbox
+        &__row
+            flex-direction: row
+            margin: 20px 0
 @media (max-width: 576px)  
     .offer
         &-block
