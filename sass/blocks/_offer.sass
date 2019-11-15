@@ -1,6 +1,6 @@
 .offer
     &-block
-        background-color: $bg-secondary
+        background-color: $bg-primary
         background-image: url('../img/form-bg.jpg')
         background-repeat: no-repeat
         background-position: top right
@@ -37,7 +37,9 @@
             margin-top: 20px
         &__title
             line-height: 29px
-// оригинальные значение      
+// оригинальные значение
+// .bg-secondary
+//     background-color: #f1f1f1
 .form
     &__row
         display: flex
@@ -66,6 +68,30 @@
         margin-top: 22px
     &-text
         display: block
+.checkbox
+    &__row
+        margin-top: 25px
+    &__group
+        margin-right: 42px
+        display: flex
+        align-items: center
+        height: 30px
+    &__label
+        display: flex
+        position: relative
+        align-items: center
+        &:hover
+            cursor: pointer
+        &::before
+            content: ""
+            width: 30px
+            height: 30px
+            border: 1px solid #dddddd
+            margin-right: 20px
+input[type="checkbox"]
+    display: none
+    &:checked + label::before
+        background-color: $lightBlue
 @media (max-width: 992px)
     .form
         &__group-btn
@@ -90,8 +116,6 @@
         &__row
             flex-direction: row
             margin: 20px 0
-            
-
 @media (max-width: 576px)  
     .offer
         &-block

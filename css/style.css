@@ -113,7 +113,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #f1f1f1;
 }
 
 .navbar__inner {
@@ -421,6 +421,10 @@ input {
   }
 }
 
+.catalogue {
+  background-color: #f1f1f1;
+}
+
 .catalogue-block {
   padding: 100px 0;
 }
@@ -627,6 +631,7 @@ input {
 }
 
 .stages {
+  background-color: #f1f1f1;
   text-align: center;
 }
 
@@ -857,6 +862,51 @@ input {
   display: block;
 }
 
+.checkbox__row {
+  margin-top: 25px;
+}
+
+.checkbox__group {
+  margin-right: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+}
+
+.checkbox__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkbox__label:hover {
+  cursor: pointer;
+}
+
+.checkbox__label::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  margin-right: 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: #507fe1;
+}
+
 @media (max-width: 992px) {
   .form__group-btn {
     -ms-flex-preferred-size: 100%;
@@ -979,6 +1029,10 @@ input {
   }
 }
 
+.reviews {
+  background-color: #f1f1f1;
+}
+
 .reviews-block {
   padding: 98px 0 270px;
 }
@@ -1037,7 +1091,7 @@ input {
 }
 
 .production-block {
-  padding: 375px 0 95px;
+  padding: 75px 0 95px;
 }
 
 .production__content {
