@@ -6,6 +6,7 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Скиналли
         link(rel="stylesheet", href="css/normalize.css")
+        link(rel="stylesheet", href="css/twentytwenty.css")
         link(rel="stylesheet", href="css/style.css")
     body
         header.header
@@ -285,11 +286,30 @@ html(lang="ru")
                                 img(src="img/stage-6.png", alt="").stages__img
                                 h4.stages__title Монтаж
                                 p.stages__text Вы оставляете заявку на нашем сайте или по телефону
-            //- section.slider
-            //-     .container
-            //-         .sleder__inner.slider-block
-            //-             h2.section__title до и после
-            //-             //- slider
+            section.before
+                .container
+                    .before-block
+                        h2.section__title до и после
+                        .before__slider-wrapper
+                            .before__slider
+                                .before__slider-item
+                                    .before-after
+                                        img(src="img/before-1.jpg", alt="")
+                                        img(src="img/before-2.jpg", alt="")
+                                .before__slider-item
+                                    .before-after
+                                        img(src="img/before-1.jpg", alt="")
+                                        img(src="img/before-2.jpg", alt="")
+                                .before__slider-item
+                                    .before-after
+                                        img(src="img/before-1.jpg", alt="")
+                                        img(src="img/before-2.jpg", alt="")
+                            .before__slider-arrows
+                                button.arrow.arrow-left
+                                    img(src="img/prev-icon.png", alt="")
+                                button.arrow.arrow-right
+                                    img(src="img/next-icon.png", alt="")
+                        
             section.reviews
                 .container
                     .reviews__inner.reviews-block
@@ -391,13 +411,11 @@ html(lang="ru")
                                 a(href="")
                                     img(src="img/vk-icon.png", alt="").footer__social-img
 
-                             
-                                 
-
-
-                                
-
-
-
         //- script(type="text/javascript" src="https://spikmi.com/Widget?Id=2030")
-
+        script(src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous")
+        script(src="js/slick.min.js")
+        script(src="js/jquery.event.move.js")
+        script(src="js/jquery.twentytwenty.js")
+        script(src="js/before-slider.js")
+            
+        
