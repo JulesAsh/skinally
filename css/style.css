@@ -1197,6 +1197,7 @@ input[type="checkbox"]:checked + label::before {
 
 .footer {
   background-color: #262626;
+  color: #ffffff;
 }
 
 .footer-block {
@@ -1207,10 +1208,6 @@ input[type="checkbox"]:checked + label::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.footer__left {
-  color: #fffff;
 }
 
 .footer__logo-text {
@@ -1228,10 +1225,7 @@ input[type="checkbox"]:checked + label::before {
 
 .footer__copy {
   margin-top: 48px;
-}
-
-.footer__middle {
-  max-width: 300px;
+  color: #767676;
 }
 
 .footer__list {
@@ -1241,15 +1235,26 @@ input[type="checkbox"]:checked + label::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__item {
+  margin-right: 25px;
+}
+
+.footer__item:last-child {
+  margin-right: 0;
 }
 
 .footer__right {
-  color: #ffffff;
   text-align: right;
 }
 
 .footer__phone {
   font-size: 20px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
   text-transform: uppercase;
 }
 
@@ -1280,5 +1285,47 @@ input[type="checkbox"]:checked + label::before {
 .footer__social-img {
   width: 25px;
   height: 25px;
+}
+
+@media (max-width: 768px) {
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer__right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer__social-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+  .footer__middle {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer__left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer__copy {
+    margin: 30px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

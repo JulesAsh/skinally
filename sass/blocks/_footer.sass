@@ -1,11 +1,10 @@
 .footer
     background-color: #262626
+    color: #ffffff
     &-block
         padding-top: 40px
         display: flex
         justify-content: space-between
-    &__left
-        color: #fffff
     &__logo
         &-text
             display: block
@@ -18,16 +17,20 @@
             display: block
     &__copy
         margin-top: 48px
-    &__middle
-        max-width: 300px
+        color: #767676
     &__list
         display: flex
         justify-content: space-between
+        align-items: center
+    &__item
+        margin-right: 25px
+        &:last-child
+            margin-right: 0
     &__right
-        color: #ffffff
         text-align: right
     &__phone
         font-size: 20px
+        +bold
         text-transform: uppercase
     &__mail
         font-size: 16px
@@ -45,6 +48,26 @@
         &-img
             width: 25px
             height: 25px
-            
+@media (max-width: 768px)
+    .footer
+        &-block
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-align: center
+        &__right
+            order: 1
+            text-align: center
+            margin-top: 20px
+        &__social
+            &-list
+                justify-content: center
+                margin-bottom: 20px
+        &__middle
+            order: 1
+        &__left
+            order: 2
+        &__copy
+            margin: 30px 0
 
 
