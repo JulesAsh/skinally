@@ -1,4 +1,6 @@
 .offer
+    padding: 129px 0
+    background-color: #ffffff
     &-block
         background-color: $bg-primary
         background-image: url('../img/form-bg.jpg')
@@ -7,8 +9,8 @@
         background-size: contain
         padding: 82px 80px
         box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1)
-        margin-top: -100px
-        margin-bottom: 130px
+        margin-top: -229px
+        // margin-bottom: 130px
     &__block
         background-image: url('../img/form-bg-2.png')
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
@@ -37,9 +39,6 @@
             margin-top: 20px
         &__title
             line-height: 29px
-// оригинальные значение
-// .bg-secondary
-//     background-color: #f1f1f1
 .form
     &__row
         display: flex
@@ -70,6 +69,8 @@
         margin-top: 22px
     &-text
         display: block
+        font-size: 17px
+        line-height: 24px
 .checkbox
     &__row
         margin-top: 25px
@@ -99,18 +100,9 @@ select
     font-size: 17px
     +light
 @media (max-width: 992px)
-    .form
-        &__group-btn
-            flex-basis: 100%
-            width: 100%
-        &__button
-            width: 100% 
-@media (max-width: 768px)
     .input 
         border-right-width: 1px
     .form
-        &__row
-            flex-direction: column
         &__group
             flex-basis: 100%
             width: 100%
@@ -118,6 +110,10 @@ select
                 text-align: center
         &__input
             margin: 15px 0
+        &__button
+            width: 100%
+        &__row
+            flex-direction: column
     .checkbox
         &__row
             flex-direction: row

@@ -5,8 +5,6 @@ html(lang="ru")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Скиналли
-        link(rel="stylesheet", href="css/normalize.css")
-        link(rel="stylesheet", href="css/twentytwenty.css")
         link(rel="stylesheet", href="css/style.css")
     body
         header.header
@@ -46,7 +44,7 @@ html(lang="ru")
         main
             section.offer.bg-secondary
                 .container
-                    .offer__inner.offer-block
+                    .offer_block.offer-block
                         h2.offer__title оставьте заявку на расчет
                         p.offer__text и получите скидку 30% на изготовление скинали или фартука для кухни
                         form.form.offer__form
@@ -57,11 +55,11 @@ html(lang="ru")
                                         option(value="С печатью") С печатью
                                         option(value="Без печати") Без печати
                                 .form__group
-                                    label(for="").form__label Ширина, см                                                 
-                                    input(type="text").input.form__input
+                                    label(for="width").form__label Ширина, см                                                 
+                                    input(type="text" id="width").input.form__input
                                 .form__group
-                                    label(for="").form__label Высота, см                                                  
-                                    input(type="text").input.form__input.form-border
+                                    label(for="height").form__label Высота, см                                                  
+                                    input(type="text" id="height").input.form__input.form-border
                             .form__row.checkbox__row
                                 .form__group.checkbox__group
                                     input(type="checkbox" id="setup").input.form__checkbox
@@ -329,7 +327,7 @@ html(lang="ru")
                                 p.reviews__text Хочу рассказать об опыте знакомства с Почта банком. Мне срочно были нужны деньги, а времени на сбор документов для кредита не было. Подруга посоветовала обратиться в офис Почта банка на ул. Тухачевского.
                                 img(src="img/review-3.jpg", alt="").reviews__img
                                 span.reviews-name Екатерина Иванова <br>Москва
-            section.offer.bg-secondary
+            section.offer.offer__padding
                 .container
                     .offer-block.offer__block
                         h2.offer__title ищите где дешевле и лучше?
@@ -374,7 +372,6 @@ html(lang="ru")
                                 p.contacts__text 5404177@mail.ru
             //- конструктор карт яндекс 
             .map#map
-                script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6a3800b4d9f1cd0405a0fb143e2aeeddc662b2fff91310b04536011baf4344bc&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false")
             section.questions
                 .container
                     .questions-block.questions__content
